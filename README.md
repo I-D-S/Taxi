@@ -15,3 +15,10 @@ ___
 - итоговая сумма(число)
 - итоговая сумма(текст)
 # Тесты
+**Тест 1:** 3 - 20 40 60 - 30 10 20 
+___
+![](https://github.com/I-D-S/Taxi/blob/main/images/3.png)
+___
+**Тест 2:** 5 - 5 10 1 15 15 - 3 3 3 2 3
+___
+![](https://github.com/I-D-S/Taxi/blob/main/images/5.png)
