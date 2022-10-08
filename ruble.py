@@ -1,13 +1,15 @@
 def out(number):
     num = str(number)    
-    result = list(num)
+    result = list(num)  # Создаём список цифр
     len_check = len(result)
-    output = []
+    output = [] # Список, куда будем вносить строковое представление цифр
     if len(result) > 6:
         print('Слишком большое число')
+    # Дополняем список нулями до 6 цифр
     while len(result) < 6:
         zero = ['0']
-        result = zero + result    
+        result = zero + result
+    # Проверяем каждую цифру из списка, ставим в соответствие строку    
     if result[0] != '0':
         if result[0] == '9': a0 = 'девятьсот'
         if result[0] == '8': a0 = 'восемьсот'
@@ -54,6 +56,7 @@ def out(number):
             output.append(a2)
     if len_check > 3:
         output.append('тысяч')
+    # Подбор падежа
     if result[2] != '0':
         if result[1] != '1':
             if result[2] == '4':
@@ -112,6 +115,7 @@ def out(number):
             if result[5] == '2': a5 = 'два'
             if result[5] == '1': a5 = 'один'
             output.append(a5)
+    # Подбор падежа
     output.append('рублей')
     if result[5] != '0':
         if result[4] != '1':
